@@ -1,0 +1,9 @@
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\bin\Debug\netcoreapp3.1\HotelFinder.Entity.deps.json
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\bin\Debug\netcoreapp3.1\HotelFinder.Entity.dll
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\bin\Debug\netcoreapp3.1\HotelFinder.Entity.pdb
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.csprojAssemblyReference.cache
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.AssemblyInfoInputs.cache
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.AssemblyInfo.cs
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.dll
+C:\Users\Samet UCA\source\repos\HotelFinder\HotelFinder.Entity\obj\Debug\netcoreapp3.1\HotelFinder.Entity.pdb
