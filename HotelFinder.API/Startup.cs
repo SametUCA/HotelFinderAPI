@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HotelFinder.Business.Abstract;
+using HotelFinder.Business.Concrete;
+using HotelFinder.DataAccess.Abstract;
+using HotelFinder.DataAccess.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +21,23 @@ namespace HotelFinder.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IHotelService, HotelManager>();
+            services.AddSingleton<IHotelRepository, HotelRepository>();
+            services.AddSwaggerDocument(configure =>
+            {
+                configure.PostProcess = (doc =>
+                {
+                    doc.Info.Title = "All Hotels Api";
+                    doc.Info.Version = "1.0.13";
+                    doc.Info.Contact = new NSwag.OpenApiContact()
+                    {
+                        Name = "Samet Uca",
+                        Email = "sametuca@mail.com",
+                        Url = "http.//www.github.com/sametuca"
+                    };
+                });
+
+            });       
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,6 +49,8 @@ namespace HotelFinder.API
             }
 
             app.UseRouting();
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseEndpoints(endpoints =>
             {

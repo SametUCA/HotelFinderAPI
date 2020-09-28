@@ -11,10 +11,9 @@ namespace HotelFinder.Business.Concrete
     public class HotelManager : IHotelService
     {
         private IHotelRepository _hotelRepository;
-
-        public HotelManager()
+        public HotelManager(IHotelRepository hotelRepository)
         {
-            _hotelRepository = new HotelRepository();
+            _hotelRepository = hotelRepository;
         }
 
         public Hotel CreateHotel(Hotel hotel)
@@ -34,7 +33,7 @@ namespace HotelFinder.Business.Concrete
 
         public Hotel GetHotelById(int id)
         {
-            if(id>1)
+            if(id>0)
             {
                 return _hotelRepository.GetHotelById(id);
             }
